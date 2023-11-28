@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
+const locales = ["es", "en"];
 
 export const metadata: Metadata = {
   title: "ComprasBitcoin",
@@ -15,11 +17,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const { locale } = params;
+
+  // Validate that the incoming `locale` parameter is valid
+  if (!locales.includes(locale as any)) notFound();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>{children}</body>
     </html>
   );
