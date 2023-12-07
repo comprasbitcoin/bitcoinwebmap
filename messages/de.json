@@ -20,7 +20,7 @@
   },
   "LocaleSwitcher": {
     "label": "Sprache ändern",
-    "locale": "{locale, select, de {Deutsch} en {Englisch} other {Unbekannt}}"
+    "locale": "{locale, select, en {English} de {German} fr {French} es {Spanish} pt {Portuguese} other {Unknown}}"
   },
   "Navigation": {
     "home": "Start",

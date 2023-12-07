@@ -1,0 +1,117 @@
+import { test as it, expect } from "@playwright/test";
+
+it("handles i18n routing", async ({ page }) => {
+  await page.goto("/");
+  await expect(page).toHaveURL("/en");
+
+  // A cookie remembers the last locale
+  // Testing for German
+  await page.goto("/de");
+  await page.goto("/");
+  await expect(page).toHaveURL("/de");
+  await page
+    .getByRole("combobox", { name: "Sprache ändern" })
+    .selectOption({ label: "Englisch" });
+  await expect(page).toHaveURL("/en");
+
+  // Testing for French
+  await page.goto("/fr");
+  await page.goto("/");
+  await expect(page).toHaveURL("/fr");
+  await page
+    .getByRole("combobox", { name: "Changer la langue" })
+    .selectOption({ label: "Anglais" });
+  await expect(page).toHaveURL("/en");
+
+  // Testing for Portuguese
+  await page.goto("/pt");
+  await page.goto("/");
+  await expect(page).toHaveURL("/pt");
+  await page
+    .getByRole("combobox", { name: "Mudar idioma" })
+    .selectOption({ label: "Inglês" });
+  await expect(page).toHaveURL("/en");
+
+  // Testing for Spanish
+  await page.goto("/es");
+  await page.goto("/");
+  await expect(page).toHaveURL("/es");
+  await page
+    .getByRole("combobox", { name: "Cambiar idioma" })
+    .selectOption({ label: "Inglés" });
+  await expect(page).toHaveURL("/en");
+});
+
+it("handles not found pages", async ({ page }) => {
+  // existing tests...
+});
+
+it("handles not found pages for routes that don't match the middleware", async ({
+  page,
+}) => {
+  // existing tests...
+});
+
+it("sets caching headers", async ({ request }) => {
+  // Add paths for the new locales
+  for (const pathname of [
+    "/en",
+    "/en/pathnames",
+    "/de",
+    "/de/pfadnamen",
+    "/fr",
+    "/fr/chemins",
+    "/pt",
+    "/pt/caminhos",
+    "/es",
+    "/es/rutas",
+  ]) {
+    expect((await request.get(pathname)).headers()["cache-control"]).toBe(
+      "s-maxage=31536000, stale-while-revalidate"
+    );
+  }
+});
+
+it("can be used to configure metadata", async ({ page }) => {
+  // Add tests for the new locales
+  await page.goto("/en");
+  await expect(page).toHaveTitle("next-intl example");
+
+  await page.goto("/de");
+  await expect(page).toHaveTitle("next-intl Beispiel");
+
+  await page.goto("/fr");
+  await expect(page).toHaveTitle("Exemple de next-intl");
+
+  await page.goto("/pt");
+  await expect(page).toHaveTitle("Exemplo de next-intl");
+
+  await page.goto("/es");
+  await expect(page).toHaveTitle("Ejemplo de next-intl");
+});
+
+it("can be used to localize the page", async ({ page }) => {
+  // Add tests for the new locales
+  await page.goto("/en");
+  page.getByRole("heading", { name: "next-intl example" });
+
+  await page.goto("/de");
+  page.getByRole("heading", { name: "next-intl Beispiel" });
+
+  await page.goto("/fr");
+  page.getByRole("heading", { name: "Exemple de next-intl" });
+
+  await page.goto("/pt");
+  page.getByRole("heading", { name: "Exemplo de next-intl" });
+
+  await page.goto("/es");
+  page.getByRole("heading", { name: "Ejemplo de next-intl" });
+});
+
+it("sets a cookie", async ({ page }) => {
+  // existing tests...
+});
+
+it("serves a robots.txt", async ({ page }) => {
+  // existing tests...
+});
