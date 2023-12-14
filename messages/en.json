@@ -1,7 +1,7 @@
 {
   "IndexPage": {
-    "title": "next-intl example",
-    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
+    "title": "comprasbitcoin",
+    "description": "Directory of places to buy with bitcoin and Lightning Network.",
     "loggedIn": "Logged in as {username}",
     "loggedOut": "You are logged out.",
     "login": "Login",
@@ -34,14 +34,14 @@
   "PageLayout": {
     "links": {
       "docs": {
-        "title": "Docs",
-        "description": "Learn more about next-intl in the official docs.",
-        "href": "https://next-intl-docs.vercel.app/"
+        "title": "Origin",
+        "description": "A Project born in la Crypta",
+        "href": "https://lacrypta.ar/"
       },
       "source": {
         "title": "Source code",
-        "description": "Browse the source code of this example on GitHub.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+        "description": "Browse the source code of ComprasBitcoin.",
+        "href": "https://github.com/comprasbitcoin/bitcoinwebmap"
       }
     }
   },

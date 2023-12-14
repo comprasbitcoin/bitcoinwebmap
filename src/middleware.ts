@@ -3,7 +3,16 @@ import { withAuth } from "next-auth/middleware";
 import createIntlMiddleware from "next-intl/middleware";
 import { pathnames, locales, localePrefix } from "./config";
 
-const publicPages = ["/", "/login", "/en", "/es", "/de", "/fr", "/pt"];
+const publicPages = [
+  "/",
+  "/login",
+  "/error",
+  "/en",
+  "/es",
+  "/de",
+  "/fr",
+  "/pt",
+];
 
 // Intl middleware configuration
 const intlMiddleware = createIntlMiddleware({
