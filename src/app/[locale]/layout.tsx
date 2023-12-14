@@ -5,7 +5,6 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import Navigation from "components/Navigation";
 import { locales } from "../../config";
-import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
