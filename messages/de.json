@@ -1,68 +1,88 @@
 {
   "IndexPage": {
-    "title": "next-intl Beispiel",
-    "description": "Dies ist ein Beispiel, das die Verwendung von <code>next-intl</code> mit dem Next.js App Router demonstriert. Bei Ändern der Sprache rechts oben ändert sich der Inhalt dieser Seite.",
-    "loggedIn": "Logged in as {username}",
-    "loggedOut": "You are logged out.",
-    "login": "Login",
-    "logout": "Logout",
-    "secret": "Secret page for logged in users"
+    "title": "comprasbitcoin",
+    "description": "Verzeichnis der Orte, an denen mit Bitcoin und dem Lightning Network gekauft werden kann.",
+    "loggedIn": "Angemeldet als {username}",
+    "loggedOut": "Sie sind abgemeldet.",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "secret": "Geheime Seite für angemeldete Benutzer"
+  },
+  "MapPage": {
+    "title": "Karte",
+    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+  },
+  "ListingPage": {
+    "title": "Auflistung",
+    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+  },
+  "AboutPage": {
+    "title": "Über",
+    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
   },
   "PathnamesPage": {
     "title": "Pfadnamen",
-    "description": "<p>Auch die Pfadnamen sind internationalisiert.</p><p>Wenn du die Standardsprache Englisch verwendest, siehst du <code>/en/pathnames</code> in der Adressleiste des Browsers auf dieser Seite.</p><p>Wenn du die Sprache auf Deutsch änderst, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
   },
   "Error": {
     "title": "Etwas ist schief gelaufen!",
-    "description": "<p>Es ist leider ein Problem aufgetreten.</p><p>Du kannst versuchen <retry>diese Seite neu zu laden</retry>.</p>"
+    "description": "<p>Leider ist ein Fehler aufgetreten.</p><p>Sie können versuchen, die Seite neu zu <retry>laden</retry>, die Sie besucht haben.</p>"
   },
   "NotFoundPage": {
     "title": "Seite nicht gefunden",
-    "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln."
+    "description": "Bitte überprüfen Sie die Adressleiste des Browsers oder verwenden Sie die Navigation, um zu einer bekannten Seite zu gelangen."
   },
   "LocaleLayout": {
     "title": "next-intl Beispiel"
   },
   "LocaleSwitcher": {
     "label": "Sprache ändern",
-    "locale": "{locale, select, en {English} de {German} fr {French} es {Spanish} pt {Portuguese} other {Unknown}}"
+    "locale": "{locale, select, en {Englisch} de {Deutsch} fr {Französisch} es {Spanisch} pt {Portugiesisch} other {Unbekannt}}"
   },
   "Navigation": {
-    "home": "Start",
+    "home": "Startseite",
+    "map": "Karte",
+    "listing": "Auflistung",
+    "about": "Über",
+    "dashboard": "Dashboard",
     "pathnames": "Pfadnamen"
   },
   "PageLayout": {
     "links": {
       "docs": {
-        "title": "Dokumentation",
-        "description": "Erfahre mehr über next-intl in der offiziellen Dokumentation.",
-        "href": "https://next-intl-docs.vercel.app/"
+        "title": "Ursprung",
+        "description": "Ein Projekt, das in der Crypta entstanden ist.",
+        "href": "https://lacrypta.ar/"
       },
       "source": {
         "title": "Quellcode",
-        "description": "Sieh dir den Quellcode dieses Beispiels auf GitHub an.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+        "description": "Durchsuchen Sie den Quellcode von ComprasBitcoin.",
+        "href": "https://github.com/comprasbitcoin/bitcoinwebmap"
       }
     }
   },
   "Secret": {
-    "title": "Secret page",
-    "description": "This page is only visible for logged in users."
+    "title": "Geheime Seite",
+    "description": "Diese Seite ist nur für angemeldete Benutzer sichtbar."
   },
   "Index": {
-    "title": "Home",
-    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
-    "loggedIn": "Logged in as {username}",
-    "loggedOut": "You are logged out.",
-    "login": "Login",
-    "logout": "Logout",
-    "secret": "Secret page for logged in users"
+    "title": "Startseite",
+    "description": "Dies ist ein einfaches Beispiel, das die Verwendung von <code>next-intl</code> mit dem Next.js App Router demonstriert. Versuchen Sie, die Sprache in der oberen rechten Ecke zu ändern, und sehen Sie, wie sich der Inhalt ändert.",
+    "loggedIn": "Angemeldet als {username}",
+    "loggedOut": "Sie sind abgemeldet.",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "secret": "Geheime Seite für angemeldete Benutzer"
   },
   "Login": {
-    "title": "Login",
-    "username": "Username",
-    "password": "Password",
-    "submit": "Login",
-    "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
+    "title": "Anmelden",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "error": "{error, select, CredentialsSignin {Ungültiger Benutzername oder ungültiges Passwort} other {Unbekannter Fehler}}"
   }
 }

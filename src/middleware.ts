@@ -5,6 +5,9 @@ import { pathnames, locales, localePrefix } from "./config";
 
 const publicPages = [
   "/",
+  "/map",
+  "/listing",
+  "/about",
   "/login",
   "/error",
   "/en",

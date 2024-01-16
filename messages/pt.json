@@ -1,68 +1,88 @@
 {
   "IndexPage": {
-    "title": "next-intl example",
-    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
-    "loggedIn": "Logged in as {username}",
-    "loggedOut": "You are logged out.",
-    "login": "Login",
-    "logout": "Logout",
-    "secret": "Secret page for logged in users"
+    "title": "comprasbitcoin",
+    "description": "Diretório de lugares para comprar com Bitcoin e a Lightning Network.",
+    "loggedIn": "Conectado como {username}",
+    "loggedOut": "Você saiu.",
+    "login": "Entrar",
+    "logout": "Sair",
+    "secret": "Página secreta para usuários conectados"
+  },
+  "MapPage": {
+    "title": "Mapa",
+    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+  },
+  "ListingPage": {
+    "title": "Listagem",
+    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+  },
+  "AboutPage": {
+    "title": "Sobre",
+    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+  },
+  "DashboardPage": {
+    "title": "Painel",
+    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
   },
   "PathnamesPage": {
-    "title": "Pathnames",
-    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+    "title": "Nomes de Caminhos",
+    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
   },
   "Error": {
-    "title": "Something went wrong!",
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+    "title": "Algo deu errado!",
+    "description": "<p>Infelizmente, encontramos um erro.</p><p>Você pode tentar <retry>recarregar a página</retry> que estava visitando.</p>"
   },
   "NotFoundPage": {
-    "title": "Page not found",
-    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+    "title": "Página não encontrada",
+    "description": "Por favor, verifique a barra de endereços do navegador ou use a navegação para ir para uma página conhecida."
   },
   "LocaleLayout": {
-    "title": "next-intl example"
+    "title": "Exemplo next-intl"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, en {English} de {German} fr {French} es {Spanish} pt {Portuguese} other {Unknown}}"
+    "label": "Mudar idioma",
+    "locale": "{locale, select, en {Inglês} de {Alemão} fr {Francês} es {Espanhol} pt {Português} other {Desconhecido}}"
   },
   "Navigation": {
-    "home": "Home",
-    "pathnames": "Pathnames"
+    "home": "Início",
+    "map": "Mapa",
+    "listing": "Listagem",
+    "about": "Sobre",
+    "dashboard": "Painel",
+    "pathnames": "Nomes de Caminhos"
   },
   "PageLayout": {
     "links": {
       "docs": {
-        "title": "Docs",
-        "description": "Learn more about next-intl in the official docs.",
-        "href": "https://next-intl-docs.vercel.app/"
+        "title": "Origem",
+        "description": "Um projeto nascido na Crypta",
+        "href": "https://lacrypta.ar/"
       },
       "source": {
-        "title": "Source code",
-        "description": "Browse the source code of this example on GitHub.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+        "title": "Código-fonte",
+        "description": "Navegue pelo código-fonte do ComprasBitcoin.",
+        "href": "https://github.com/comprasbitcoin/bitcoinwebmap"
       }
     }
   },
   "Secret": {
-    "title": "Secret page",
-    "description": "This page is only visible for logged in users."
+    "title": "Página Secreta",
+    "description": "Esta página é visível apenas para usuários conectados."
   },
   "Index": {
-    "title": "Home",
-    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes.",
-    "loggedIn": "Logged in as {username}",
-    "loggedOut": "You are logged out.",
-    "login": "Login",
-    "logout": "Logout",
-    "secret": "Secret page for logged in users"
+    "title": "Início",
+    "description": "Este é um exemplo básico que demonstra o uso do <code>next-intl</code> com o roteador de aplicativos Next.js. Experimente mudar a localidade no canto superior direito e veja como o conteúdo muda.",
+    "loggedIn": "Conectado como {username}",
+    "loggedOut": "Você saiu.",
+    "login": "Entrar",
+    "logout": "Sair",
+    "secret": "Página secreta para usuários conectados"
   },
   "Login": {
-    "title": "Login",
-    "username": "Username",
-    "password": "Password",
-    "submit": "Login",
-    "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
+    "title": "Entrar",
+    "username": "Nome de usuário",
+    "password": "Senha",
+    "submit": "Entrar",
+    "error": "{error, select, CredentialsSignin {Nome de usuário ou senha inválidos} other {Erro desconhecido}}"
   }
 }

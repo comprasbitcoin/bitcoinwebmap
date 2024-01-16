@@ -6,7 +6,7 @@ type Props = {
   params: { locale: string };
 };
 
-export default function PathnamesPage({ params: { locale } }: Props) {
+export default function Dashboard({ params: { locale } }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
