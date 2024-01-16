@@ -4,11 +4,12 @@ import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { useLocale, useTranslations } from "next-intl";
 import { FormEvent, useState } from "react";
-import PageLayout from "../../../components/PageLayout";
+import { unstable_setRequestLocale } from "next-intl/server";
+import PageLayout from "components/PageLayout";
 
 export default function Login() {
   const locale = useLocale();
-  const t = useTranslations("Login");
+  const t = useTranslations("LoginPage");
   const [error, setError] = useState<string>();
   const router = useRouter();
 

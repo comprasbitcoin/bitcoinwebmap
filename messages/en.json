@@ -10,19 +10,19 @@
   },
   "MapPage": {
     "title": "Map",
-    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Map section</p>"
   },
   "ListingPage": {
     "title": "Listing",
-    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> List of profesionals and sites</p>"
   },
   "AboutPage": {
     "title": "About",
-    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> About us section</p>"
   },
   "DashboardPage": {
     "title": "Dashboard",
-    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> This will be the user's Dashboard</p>"
   },
   "PathnamesPage": {
     "title": "Pathnames",
@@ -78,7 +78,7 @@
     "logout": "Logout",
     "secret": "Secret page for logged in users"
   },
-  "Login": {
+  "LoginPage": {
     "title": "Login",
     "username": "Username",
     "password": "Password",

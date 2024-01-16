@@ -10,19 +10,19 @@
   },
   "MapPage": {
     "title": "Mapa",
-    "description": "<p>Las rutas también están internacionalizadas.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/rutas</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a alemán, la URL se localiza en consecuencia (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Sección de mapas</p>"
   },
   "ListingPage": {
     "title": "Listado",
-    "description": "<p>Las rutas también están internacionalizadas.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/rutas</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a alemán, la URL se localiza en consecuencia (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Lista de profesionales y sitios</p>"
   },
   "AboutPage": {
-    "title": "Acerca de",
-    "description": "<p>Las rutas también están internacionalizadas.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/rutas</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a alemán, la URL se localiza en consecuencia (<code>/de/pfadnamen</code>).</p>"
+    "title": "Acerca de nosotros",
+    "description": "<p> Sección sobre nosotros</p>"
   },
   "DashboardPage": {
     "title": "Tablero",
-    "description": "<p>Las rutas también están internacionalizadas.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/rutas</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a alemán, la URL se localiza en consecuencia (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Este será el tablero del usuario</p>"
   },
   "PathnamesPage": {
     "title": "Nombres de rutas",
@@ -78,7 +78,7 @@
     "logout": "Cerrar sesión",
     "secret": "Página secreta para usuarios conectados"
   },
-  "Login": {
+  "LoginPage": {
     "title": "Iniciar sesión",
     "username": "Nombre de usuario",
     "password": "Contraseña",

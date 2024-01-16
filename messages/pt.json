@@ -10,23 +10,19 @@
   },
   "MapPage": {
     "title": "Mapa",
-    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Seção de mapas</p>"
   },
   "ListingPage": {
     "title": "Listagem",
-    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Lista de profissionais e locais</p>"
   },
   "AboutPage": {
-    "title": "Sobre",
-    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+    "title": "Sobre nós",
+    "description": "<p> Seção Sobre nós</p>"
   },
   "DashboardPage": {
     "title": "Painel",
-    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
-  },
-  "PathnamesPage": {
-    "title": "Nomes de Caminhos",
-    "description": "<p>Os caminhos também são internacionalizados.</p><p>Se você estiver usando o idioma padrão, o inglês, verá <code>/en/caminhos</code> na barra de endereços do navegador nesta página.</p><p>Se você mudar a localidade para o alemão, a URL será localizada de acordo (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Este será o painel do usuário</p>"
   },
   "Error": {
     "title": "Algo deu errado!",
@@ -78,7 +74,7 @@
     "logout": "Sair",
     "secret": "Página secreta para usuários conectados"
   },
-  "Login": {
+  "LoginPage": {
     "title": "Entrar",
     "username": "Nome de usuário",
     "password": "Senha",

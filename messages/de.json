@@ -10,19 +10,19 @@
   },
   "MapPage": {
     "title": "Karte",
-    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Kartenabschnitt</p>"
   },
   "ListingPage": {
     "title": "Auflistung",
-    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Liste von Fachleuten und Standorten</p>"
   },
   "AboutPage": {
-    "title": "Über",
-    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+    "title": "Über uns",
+    "description": "<p> Über uns Abschnitt</p>"
   },
   "DashboardPage": {
     "title": "Dashboard",
-    "description": "<p>Die Pfadnamen sind ebenfalls internationalisiert.</p><p>Wenn Sie die Standardsprache Englisch verwenden, sehen Sie <code>/en/pfadnamen</code> in der Adressleiste dieses Browsers auf dieser Seite.</p><p>Wenn Sie die Sprache auf Deutsch ändern, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Dies wird das Dashboard des Benutzers sein</p>"
   },
   "PathnamesPage": {
     "title": "Pfadnamen",
@@ -78,7 +78,7 @@
     "logout": "Abmelden",
     "secret": "Geheime Seite für angemeldete Benutzer"
   },
-  "Login": {
+  "LoginPage": {
     "title": "Anmelden",
     "username": "Benutzername",
     "password": "Passwort",

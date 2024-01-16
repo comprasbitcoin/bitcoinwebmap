@@ -10,19 +10,19 @@
   },
   "MapPage": {
     "title": "Carte",
-    "description": "<p>Les chemins sont également internationalisés.</p><p>Si vous utilisez la langue par défaut, l'anglais, vous verrez <code>/en/chemins</code> dans la barre d'adresse du navigateur sur cette page.</p><p>Si vous changez la langue pour l'allemand, l'URL est localisée en conséquence (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Section de la carte</p>"
   },
   "ListingPage": {
     "title": "Liste",
-    "description": "<p>Les chemins sont également internationalisés.</p><p>Si vous utilisez la langue par défaut, l'anglais, vous verrez <code>/en/chemins</code> dans la barre d'adresse du navigateur sur cette page.</p><p>Si vous changez la langue pour l'allemand, l'URL est localisée en conséquence (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Liste des professionnels et des sites</p>"
   },
   "AboutPage": {
-    "title": "À propos",
-    "description": "<p>Les chemins sont également internationalisés.</p><p>Si vous utilisez la langue par défaut, l'anglais, vous verrez <code>/en/chemins</code> dans la barre d'adresse du navigateur sur cette page.</p><p>Si vous changez la langue pour l'allemand, l'URL est localisée en conséquence (<code>/de/pfadnamen</code>).</p>"
+    "title": "À propos de nous",
+    "description": "<p> Section À propos de nous</p>"
   },
   "DashboardPage": {
     "title": "Tableau de bord",
-    "description": "<p>Les chemins sont également internationalisés.</p><p>Si vous utilisez la langue par défaut, l'anglais, vous verrez <code>/en/chemins</code> dans la barre d'adresse du navigateur sur cette page.</p><p>Si vous changez la langue pour l'allemand, l'URL est localisée en conséquence (<code>/de/pfadnamen</code>).</p>"
+    "description": "<p> Ceci sera le tableau de bord de l'utilisateur</p>"
   },
   "PathnamesPage": {
     "title": "Noms de chemins",
@@ -78,7 +78,7 @@
     "logout": "Se déconnecter",
     "secret": "Page secrète pour les utilisateurs connectés"
   },
-  "Login": {
+  "LoginPage": {
     "title": "Se connecter",
     "username": "Nom d'utilisateur",
     "password": "Mot de passe",

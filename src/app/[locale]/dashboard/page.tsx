@@ -10,7 +10,7 @@ export default function Dashboard({ params: { locale } }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
-  const t = useTranslations("PathnamesPage");
+  const t = useTranslations("DashboardPage");
 
   return (
     <PageLayout title={t("title")}>
