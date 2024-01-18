@@ -4,9 +4,13 @@ export const locales = ["en", "de", "fr", "pt", "es"] as const;
 
 export const pathnames = {
   "/": "/",
+  "/map": "/map",
+  "/listing": "/listing",
+  "/about": "/about",
+  "/dashboard": "/dashboard",
   "/pathnames": {
-    en: "/pathnames",
-    de: "/pfadnamen",
+    en: "/en",
+    de: "/de",
     fr: "/fr",
     pt: "/pt",
     es: "/es",

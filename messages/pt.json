@@ -79,6 +79,7 @@
     "username": "Nome de usuário",
     "password": "Senha",
     "submit": "Entrar",
-    "error": "{error, select, CredentialsSignin {Nome de usuário ou senha inválidos} other {Erro desconhecido}}"
+    "error": "{error, select, CredentialsSignin {Nome de usuário ou senha inválidos} other {Erro desconhecido}}",
+    "errorSimple": "error"
   }
 }

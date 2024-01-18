@@ -83,6 +83,7 @@
     "username": "Benutzername",
     "password": "Passwort",
     "submit": "Anmelden",
-    "error": "{error, select, CredentialsSignin {Ungültiger Benutzername oder ungültiges Passwort} other {Unbekannter Fehler}}"
+    "error": "{error, select, CredentialsSignin {Ungültiger Benutzername oder ungültiges Passwort} other {Unbekannter Fehler}}",
+    "errorSimple": "error"
   }
 }

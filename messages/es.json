@@ -83,6 +83,7 @@
     "username": "Nombre de usuario",
     "password": "Contraseña",
     "submit": "Iniciar sesión",
-    "error": "{error, select, CredentialsSignin {Nombre de usuario o contraseña incorrectos} other {Error desconocido}}"
+    "error": "{error, select, CredentialsSignin {Nombre de usuario o contraseña incorrectos} other {Error desconocido}}",
+    "errorSimple": "error"
   }
 }
