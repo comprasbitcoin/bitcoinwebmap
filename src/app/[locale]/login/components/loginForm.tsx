@@ -5,13 +5,6 @@ import { signIn } from "next-auth/react";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ShowError } from "components/ShowError";
-import { getTranslations } from "next-intl/server";
-
-export const getStaticProps = async () => {
-  const t = await getTranslations("LoginPage");
-
-  return { props: { t } };
-};
 
 export const LoginForm = ({
   locale,
@@ -19,18 +12,15 @@ export const LoginForm = ({
   passwordlabel,
   submitlabel,
   errorlabel,
-  t,
 }: {
   locale: string;
   usernamelabel: string;
   passwordlabel: string;
   submitlabel: string;
   errorlabel: string;
-  t?: any;
 }) => {
   const [error, setError] = useState<string>();
   const router = useRouter();
-  console.log(t("username"));
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -74,7 +64,7 @@ export const LoginForm = ({
         <input name="password" type="password" />
       </label>
       {error && <p>{errorlabel}</p>}
-      <ShowError error={error} />
+      {/* {error && <p>{t("error", { error })}</p>}  */}
       <button type="submit">{submitlabel}</button>
     </form>
   );
