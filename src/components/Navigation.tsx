@@ -9,9 +9,9 @@ export default function Navigation() {
   return (
     <div className="bg-orange-700">
       <nav className="container flex justify-between p-2 text-white">
-        <div class="flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <NavigationLink href="/">
-            <img src={logoImg.src} alt={t("home")} class="w-7 h-7" />
+            <img src={logoImg.src} alt={t("home")} className="w-7 h-7" />
           </NavigationLink>
           <NavigationLink href="/">{t("home")}</NavigationLink>
           <NavigationLink href="/map">{t("map")}</NavigationLink>
