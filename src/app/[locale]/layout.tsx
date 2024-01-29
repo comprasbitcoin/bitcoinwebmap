@@ -4,9 +4,10 @@ import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import Navigation from "components/Navigation";
+import Sidebar from "components/Sidebar";
 import { locales } from "../../config";
 import { NextIntlClientProvider } from "next-intl";
-
+Sidebar;
 const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
@@ -48,7 +49,9 @@ export default async function LocaleLayout({
       <html className="h-full" lang={locale}>
         <body className={clsx(inter.className, "flex h-full flex-col")}>
           <Navigation />
+
           {children}
+          <Sidebar />
         </body>
       </html>
     </NextIntlClientProvider>
