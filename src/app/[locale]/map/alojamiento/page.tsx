@@ -17,16 +17,7 @@ export default function Map({ params: { locale } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuMap />
-      <MapLeafletSsrOff />
-
-      <div className="max-w-[490px]">
-        {t.rich("description", {
-          p: (chunks) => <p className="mt-4">{chunks}</p>,
-          code: (chunks) => (
-            <code className="font-mono text-white">{chunks}</code>
-          ),
-        })}
-      </div>
+      <MapLeafletSsrOff title={t("title")} />
     </PageLayout2>
   );
 }

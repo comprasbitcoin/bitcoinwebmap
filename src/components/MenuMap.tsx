@@ -5,7 +5,7 @@ export default function MenuMap() {
   const t = useTranslations("Menu");
 
   return (
-    <div className="bg-orange-700">
+    <div className="bg-orange-600">
       <nav className="container flex justify-between p-1 text-white">
         <div className="flex justify-center items-center">
           <NavigationLink href="/map/alojamiento">

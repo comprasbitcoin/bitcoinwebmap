@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
 import MenuMap from "components/MenuMap";
+import MapLeafletSsrOff from "components/MapLeafletSsrOff";
 
 type Props = {
   params: { locale: string };
@@ -16,15 +17,7 @@ export default function Map({ params: { locale } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuMap />
-
-      <div className="max-w-[490px]">
-        {t.rich("description", {
-          p: (chunks) => <p className="mt-4">{chunks}</p>,
-          code: (chunks) => (
-            <code className="font-mono text-white">{chunks}</code>
-          ),
-        })}
-      </div>
+      <MapLeafletSsrOff />
     </PageLayout2>
   );
 }

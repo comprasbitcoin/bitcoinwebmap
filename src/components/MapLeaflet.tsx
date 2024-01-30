@@ -26,15 +26,15 @@ export default function MapLeaflet({ children, title }: Props) {
   const center = [geoData.lat, geoData.lng];
 
   return (
-    <MapContainer center={center} zoom={12} style={{ height: "100vh" }}>
-      <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      {geoData.lat && geoData.lng && (
-        <Marker position={[geoData.lat, geoData.lng]} />
-      )}
-      <ChangeView coords={center} />
-    </MapContainer>
+    <div className="min-h-screen ">
+      <MapContainer center={center} zoom={12} style={{ height: "80vh" }}>
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+
+        <ChangeView coords={center} />
+      </MapContainer>
+    </div>
   );
 }
