@@ -33,7 +33,7 @@ const publicPages = [
 
 // Intl middleware configuration
 const intlMiddleware = createIntlMiddleware({
-  defaultLocale: "es",
+  defaultLocale: "en",
   locales,
   pathnames,
   localePrefix,
