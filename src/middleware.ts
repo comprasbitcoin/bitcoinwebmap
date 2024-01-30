@@ -6,7 +6,21 @@ import { pathnames, locales, localePrefix } from "./config";
 const publicPages = [
   "/",
   "/map",
+  "/map/alojamiento",
+  "/map/bienestar",
+  "/map/compras",
+  "/map/entretenimiento",
+  "/map/gastronomia",
+  "/map/servicios",
+  "/map/transporte",
   "/listing",
+  "/listing/alojamiento",
+  "/listing/bienestar",
+  "/listing/compras",
+  "/listing/entretenimiento",
+  "/listing/gastronomia",
+  "/listing/servicios",
+  "/listing/transporte",
   "/about",
   "/login",
   "/error",
@@ -19,7 +33,7 @@ const publicPages = [
 
 // Intl middleware configuration
 const intlMiddleware = createIntlMiddleware({
-  defaultLocale: "en",
+  defaultLocale: "es",
   locales,
   pathnames,
   localePrefix,

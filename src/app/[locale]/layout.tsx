@@ -4,10 +4,8 @@ import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
 import Navigation from "components/Navigation";
-import Sidebar from "components/Sidebar";
 import { locales } from "../../config";
 import { NextIntlClientProvider } from "next-intl";
-Sidebar;
 const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
@@ -51,7 +49,6 @@ export default async function LocaleLayout({
           <Navigation />
 
           {children}
-          <Sidebar />
         </body>
       </html>
     </NextIntlClientProvider>

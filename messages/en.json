@@ -85,5 +85,16 @@
     "submit": "Login",
     "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}",
     "errorSimple": "error"
+  },
+  "Menu": {
+    "alojamiento": "alojamiento",
+    "bienestar": "bienestar",
+    "compras": "compras",
+    "errorSimple": "error",
+    "gastronomia": "gastronomia",
+    "servicios": "servicios",
+    "transporte": "transporte",
+    "entretenimiento": "entretenimiento",
+    "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
   }
 }
