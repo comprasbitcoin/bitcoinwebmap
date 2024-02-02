@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
 import { useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 export function ChangeView({ coords }: any) {
   const map = useMap();
