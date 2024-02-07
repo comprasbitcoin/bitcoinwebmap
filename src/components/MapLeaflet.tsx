@@ -14,11 +14,12 @@ export function ChangeView({ coords }: any) {
 type Props = {
   children?: ReactNode;
   title: ReactNode;
+  attribution: { innerHTML: { __html: string } };
 };
 
-export default function MapLeaflet({ children, title }: Props) {
+export default function MapLeaflet({ children, title, attribution }: Props) {
   const t = useTranslations("PageLayout");
-  const [geoData, setGeoData] = useState({
+  const [geoData] = useState({
     lat: -34.5645369562744,
     lng: -58.44317823716325,
   });
