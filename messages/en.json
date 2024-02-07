@@ -96,5 +96,7 @@
     "transporte": "transporte",
     "entretenimiento": "entretenimiento",
     "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
-  }
+  },
+  "VendorListing": {
+    "alojamiento": }
 }
