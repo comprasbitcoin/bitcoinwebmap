@@ -104,5 +104,13 @@
     "by": "by",
     "creator": "Creator",
     "image": "Image"
+  },
+  "VendorGrid": {
+    "vendortitle": "vendortitle",
+    "slug": "Slug",
+    "summary": "Summary",
+    "by": "by",
+    "creator": "Creator",
+    "image": "Image"
   }
 }

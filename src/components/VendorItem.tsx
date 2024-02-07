@@ -14,8 +14,6 @@ type Props = {
 export default function VendorItem({
   params: { vendortitle, slug, summary, creator, image },
 }: Props) {
-  // Enable static rendering
-
   const t = useTranslations("VendorItem");
 
   return (
