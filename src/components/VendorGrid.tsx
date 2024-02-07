@@ -3,6 +3,11 @@ import { useTranslations } from "next-intl";
 import VendorItem from "./VendorItem";
 interface Vendor {
   id: string;
+  vendortitle: string;
+  slug: string;
+  summary: string;
+  creator: string;
+  image: string;
   // other properties of Vendor
 }
 type Props = {
