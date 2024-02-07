@@ -98,7 +98,7 @@
     "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
   },
   "VendorItem": {
-    "title": "Title",
+    "vendortitle": "vendortitle",
     "slug": "Slug",
     "summary": "Summary",
     "by": "by",
