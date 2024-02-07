@@ -1,15 +1,17 @@
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
 import MenuListing from "components/Menus/MenuListing";
-import { getVendors } from "../../../../lib/vendors";
 import VendorGrid from "components/VendorGrid";
 
 type Props = {
-  params: { provider: string };
-  vendor: any;
+  params: { locale: string; provider: string };
 };
 
-export default async function ProvidersGrid({ params: { provider } }: Props) {
-  const vendor = await getVendors();
+export default function ProvidersGrid({ params: { locale, provider } }: Props) {
+  unstable_setRequestLocale(locale);
+
+  const t = useTranslations("MapPage");
 
   return (
     <PageLayout2>
