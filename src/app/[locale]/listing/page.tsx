@@ -3,6 +3,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
 import MenuListing from "components/Menus/MenuListing";
 import VendorItem from "components/VendorItem";
+import VendorGrid from "components/VendorGrid";
 
 type Props = {
   params: { locale: string; provider: string };
@@ -17,13 +18,18 @@ export default function ProvidersGrid({ params: { locale, provider } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuListing />
-      <VendorItem
+      <VendorGrid
         params={{
-          vendortitle: provider,
-          slug: provider,
-          summary: provider,
-          creator: provider,
-          image: provider,
+          vendor: [
+            {
+              id: "123", // Replace with the actual id
+              vendortitle: provider,
+              slug: provider,
+              summary: provider,
+              creator: provider,
+              image: provider,
+            },
+          ],
         }}
       />
     </PageLayout2>
