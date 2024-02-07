@@ -2,16 +2,17 @@ import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
 import MenuListing from "components/Menus/MenuListing";
-import VendorItem from "components/VendorItem";
 import VendorGrid from "components/VendorGrid";
+import { getVendors } from "../../../../lib/vendors";
 
 type Props = {
   params: { locale: string; provider: string };
+  vendors: any;
 };
 
 export default function ProvidersGrid({ params: { locale, provider } }: Props) {
-  // Enable static rendering
   unstable_setRequestLocale(locale);
+  const vendors = getVendors();
 
   const t = useTranslations("MapPage");
 
@@ -19,18 +20,19 @@ export default function ProvidersGrid({ params: { locale, provider } }: Props) {
     <PageLayout2 title={t("title")}>
       <MenuListing />
       <VendorGrid
-        params={{
-          vendor: [
-            {
-              id: "123", // Replace with the actual id
-              vendortitle: provider,
-              slug: provider,
-              summary: provider,
-              creator: provider,
-              image: provider,
-            },
-          ],
-        }}
+        vendors={vendors}
+        // params={{
+        //   vendor: [
+        //     {
+        //       id: "123", // Replace with the actual id
+        //       vendortitle: provider,
+        //       slug: provider,
+        //       summary: provider,
+        //       creator: provider,
+        //       image: provider,
+        //     },
+        //   ],
+        // }}
       />
     </PageLayout2>
   );

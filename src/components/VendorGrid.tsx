@@ -8,22 +8,23 @@ interface Vendor {
   summary: string;
   creator: string;
   image: string;
-  // other properties of Vendor
 }
 type Props = {
   params: {
-    vendor: Vendor[];
+    vendors: Vendor[];
   };
 };
 
-export default function VendorGrid({ params: { vendor } }: Props) {
+export default function VendorGrid({
+  params: { vendors } = { vendors: [] },
+}: Props) {
   const t = useTranslations("VendorGrid");
 
   return (
     <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-      {vendor.map((vendor) => (
-        <li key={vendor.id}>
-          <VendorItem params={vendor} />
+      {vendors.map((vendors) => (
+        <li key={vendors.id}>
+          <VendorItem params={vendors} />
         </li>
       ))}
     </ul>
