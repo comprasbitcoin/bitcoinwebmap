@@ -3,10 +3,9 @@ import { ReactNode } from "react";
 
 type Props = {
   children?: ReactNode;
-  title: ReactNode;
 };
 
-export default function PageLayout2({ children, title }: Props) {
+export default function PageLayout2({ children }: Props) {
   const t = useTranslations("PageLayout");
 
   return (

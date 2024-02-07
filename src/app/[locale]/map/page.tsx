@@ -6,7 +6,7 @@ import MapLeafletSsrOff from "components/MapLeafletSsrOff";
 import { title } from "process";
 
 type Props = {
-  params: { locale: string };
+  params: { locale: string; attribution?: string };
 };
 
 export default function Map({ params: { locale } }: Props) {
@@ -18,7 +18,10 @@ export default function Map({ params: { locale } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuMap />
-      <MapLeafletSsrOff title={title} />
+      <MapLeafletSsrOff
+        title={title}
+        attribution={{ innerHTML: { __html: "Some attribution" } }}
+      />
     </PageLayout2>
   );
 }

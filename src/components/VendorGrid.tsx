@@ -2,8 +2,8 @@ import { useTranslations } from "next-intl";
 
 import VendorItem from "./VendorItem";
 interface Vendor {
-  id: string;
-  vendortitle: string;
+  id: number;
+  vendor: string;
   slug: string;
   summary: string;
   creator: string;
