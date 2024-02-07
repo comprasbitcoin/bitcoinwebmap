@@ -4,10 +4,10 @@ import PageLayout2 from "components/PageLayout2";
 import MenuListing from "components/MenuListing";
 
 type Props = {
-  params: { locale: string };
+  params: { locale: string; provider: string };
 };
 
-export default function Map({ params: { locale } }: Props) {
+export default function ProvidersGrid({ params: { locale, provider } }: Props) {
   // Enable static rendering
   unstable_setRequestLocale(locale);
 
@@ -16,15 +16,6 @@ export default function Map({ params: { locale } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuListing />
-
-      <div className="max-w-[490px]">
-        {t.rich("description", {
-          p: (chunks) => <p className="mt-4">{chunks}</p>,
-          code: (chunks) => (
-            <code className="font-mono text-white">{chunks}</code>
-          ),
-        })}
-      </div>
     </PageLayout2>
   );
 }
