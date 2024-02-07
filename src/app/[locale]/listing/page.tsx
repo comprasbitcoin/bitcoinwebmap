@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
-import MenuListing from "components/MenuListing";
+import MenuListing from "components/Menus/MenuListing";
 import VendorItem from "components/VendorItem";
 
 type Props = {

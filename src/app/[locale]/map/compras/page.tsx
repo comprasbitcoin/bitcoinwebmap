@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import PageLayout2 from "components/PageLayout2";
-import MenuMap from "components/MenuMap";
+import MenuMap from "components/Menus/MenuMap";
 
 type Props = {
   params: { locale: string };
