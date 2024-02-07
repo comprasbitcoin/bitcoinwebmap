@@ -4,6 +4,7 @@ import PageLayout2 from "components/PageLayout2";
 import MenuListing from "components/Menus/MenuListing";
 import VendorPage from "components/VendorPage";
 import { getVendors } from "../../../../lib/vendors";
+import VendorGrid from "components/VendorGrid";
 
 type Props = {
   params: { locale: string; provider: string };
@@ -19,21 +20,7 @@ export default function ProvidersGrid({ params: { locale, provider } }: Props) {
   return (
     <PageLayout2 title={t("title")}>
       <MenuListing />
-      <VendorPage
-        vendors={vendors}
-        // params={{
-        //   vendor: [
-        //     {
-        //       id: "123", // Replace with the actual id
-        //       vendortitle: provider,
-        //       slug: provider,
-        //       summary: provider,
-        //       creator: provider,
-        //       image: provider,
-        //     },
-        //   ],
-        // }}
-      />
+      <VendorGrid vendors={vendors} />
     </PageLayout2>
   );
 }
